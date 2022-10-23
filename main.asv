@@ -11,6 +11,7 @@ NuCantidadEjecucion = 30;
 % Ejecucion de acuerdo a la tabla
 resultados = [0, 0.2, 0.4, 0.6, 0.8, 1; 0,0,0,0,0,0];
 
+
 disp("====== Inicia Ejecucion "+string(datetime)+" ========")
 % =====================================================================================
 % Inicio del proceso 
@@ -26,6 +27,7 @@ for ciclo=1: size(resultados,2)
     porcentajeRutaMayorProbabilidad = 1-resultados(1,ciclo); 
     % Lectura del archivo y cargar en varable la informacion
     S = lecturaArchivo(rutaArchivo);
+
 
     % Resultados de cada iteracion para calcular el promedio del ciclo de
     % eleccion de rutas hasta el calculo del promedio de celdas
@@ -52,12 +54,14 @@ for ciclo=1: size(resultados,2)
         matrizCelda = mapeoMatrizCelda(matriz, mCeldasRutas, matrizBase);
         
         % Calculamos la cantidad de carros fallidos
-        %resultado = calculadorFallas(matrizCelda, NuaMax, NuCantidadEjecucion);
-        resultado = calculadorFallas(matrizCelda, NuaMax, 1);
+        resultado = calculadorFallas(matrizCelda, NuaMax, NuCantidadEjecucion);
+        
         
         % Almaceno el promedio de ejecuciones
         resultadoPromedio =[resultadoPromedio, resultado.promedioFallos];
-        disp(cantidadEjecuciones);
+
+
+
     end
 
     % Almacenamos el promedio de fallas
@@ -69,6 +73,8 @@ for ciclo=1: size(resultados,2)
     disp("Cantidad de Carros: "+ size(S.vehicle,2)); 
     disp("Porcentaje: "+ (  resultados(1,ciclo)/size(S.vehicle,2)*100  ) +"%");
     
+    (mean(arregloEjecuciones)/size(matrizCelda,1)*100
+
 end
 % =====================================================================================
 % Finaliza el proceso 
