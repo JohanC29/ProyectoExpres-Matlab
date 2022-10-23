@@ -12,7 +12,6 @@ NuaMax = 1;
 % Cantidad de repeticiones para el calculo promedio
 NuCantidadEjecucion = 30;
 
-disp("====== Inicia Ejecucion "+string(datetime)+" ========")
 % =====================================================================================
 % Inicio del proceso 
 % =====================================================================================
@@ -47,7 +46,7 @@ disp("Porcentaje: "+ resultado.porcentaje+"%");
 % =====================================================================================
 % Finaliza el proceso 
 % =====================================================================================
-disp("====== Finaliza Ejecucion "+string(datetime)+" ========")
+
 
 
 

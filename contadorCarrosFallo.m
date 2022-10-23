@@ -1,5 +1,4 @@
 
-
 % Cantidad de carros en una misma celda para no conciderarce falla
 NuaMax = 1;
 NuCantidadEjecucion = 30;

@@ -1,10 +1,4 @@
 matrizCelda = matriz;
-for i=2: size(matrizCelda,1)
-    for j=2: size(matrizCelda,2)
-        matrizCelda(i,j) = "0";
-    end
-end
-
 
 for i=2: size(matriz,2)
     for j=2: size(matriz,1)

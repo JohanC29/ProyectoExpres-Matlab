@@ -1,20 +1,18 @@
-function matriZero = mapeoMatriz(matrizVehiculo)
-    
-    matriZero = ["0";"0"];
-    % Obtenemos el numero de vahiculos
-    numVehiculo = size(matrizVehiculo,1)-1;
-
-    % Obtenemos la ruta mas extenza de la matriz de vehiculos
-    columaTiempo = 
-
-    for i=2: numVehiculo+1
-        matriZero(i,1)= S.vehicle(i-1).idAttribute;
-        for j=2: columaTiempo+1
-            if i==2
-              matriZero(1,j) = j-1;
-            end
-            matriZero(i,j)="0";
-        end
+function matriz = mapeoMatriz(matriz, matrizVehiculo)
+    % Realizamos el llenado de la matriz mapeando las rutas en su determinado
+    % momento
+    for i=2: size(matrizVehiculo,1)
+        % Tomas las rutas del vehiculo y los colocamos en un arreglo para
+        % mapearlo
+        rutasArreglo = split(matrizVehiculo(i,3));
+        
+        %  Se establece el momento en que el carro inicia su recorrido
+         j = str2double(matrizVehiculo(i,2));
+         
+         % Ubicamos cada ruta a partir del inicio del carro
+         for k=1: size(rutasArreglo,1)
+            matriz(str2double(matrizVehiculo(i,4))+1,(j+2)) = rutasArreglo(k);
+            j = j + 1;
+         end
     end
-
 end
