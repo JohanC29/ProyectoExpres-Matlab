@@ -5,7 +5,7 @@ rutaArchivo = "archivos/InTAS_001.rou.xml"; % Variable de la ubicacion del archi
 NuaMax = 1;
 
 % Cantidad de repeticiones para el calculo promedio
-NuCantidadEjecucion = 30;
+NuCantidadEjecucion = 1;
 
 
 % Ejecucion de acuerdo a la tabla

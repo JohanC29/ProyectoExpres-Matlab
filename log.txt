@@ -1,0 +1,37 @@
+====== Inicia Ejecucion 23-Oct-2022 10:18:22 ========
+
+Ejecucion Porcentaje de incertidumbre: 0
+Promedio Fallos: 12.8667
+Cantidad de Carros: 1080
+Porcentaje: 0%
+
+Ejecucion Porcentaje de incertidumbre: 0.2
+Promedio Fallos: 12.5
+Cantidad de Carros: 1080
+Porcentaje: 0.018519%
+
+Ejecucion Porcentaje de incertidumbre: 0.4
+Promedio Fallos: 12.7333
+Cantidad de Carros: 1080
+Porcentaje: 0.037037%
+
+Ejecucion Porcentaje de incertidumbre: 0.6
+Promedio Fallos: 13.3
+Cantidad de Carros: 1080
+Porcentaje: 0.055556%
+
+Ejecucion Porcentaje de incertidumbre: 0.8
+Promedio Fallos: 13.6
+Cantidad de Carros: 1080
+Porcentaje: 0.074074%
+
+
+Ejecucion Porcentaje de incertidumbre: 1
+Promedio Fallos: 13.8
+Cantidad de Carros: 1080
+Porcentaje: 0.092593%
+====== Finaliza Ejecucion 23-Oct-2022 14:23:10 ========
+         0    0.2000    0.4000    0.6000    0.8000    1.0000
+   12.8667   12.5000   12.7333   13.3000   13.6000   13.8000
+
+>> 
